@@ -37,7 +37,7 @@
 `docker run --name roach-warden -d --link spawning-pool:db -p 8081:80 phpmyadmin/phpmyadmin`
 ##### 16. Посмотреть логи контейнера `spawning-pool`, без запуска его оболочки.
 `docker logs -f spawning-pool`
-##### 17. Отобраpbnm всех активных в данный момент контейнеров на виртуальной машине Char.
+##### 17. Отобразить всех активных в данный момент контейнеров на виртуальной машине Char.
 `docker ps`
 ##### 18. Перезапустить контейнер `overlord`.
 `docker restart overlor`
