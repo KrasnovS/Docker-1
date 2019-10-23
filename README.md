@@ -78,7 +78,7 @@ flask run --host=0.0.0.0 --port 3000
 ##### 27. Получить в режиме реального времени журналы одной из задач службы технической поддержки.
 `docker service logs -f engineering-bay 2>&1 | grep "engineering-bay.1"`
 ##### 28. Запустите `42school/marine-squad` в двух репликах. Эта служба будет называться `marines` и будет находиться в сети `overmind`.
-проверяем командой: docker service ps marines
+`docker service create -d --name marines --network overmind --replicas=2 -e OC_USERNAME=orbital-command -e OC_PASSWD=orbital-command 42school/marine-squad`
 ##### 29. Показать все задачи службы `marines`.
 `docker service ps marines`
 ##### 30. Увеличьте количество копий службы `marines` до двадцати.
