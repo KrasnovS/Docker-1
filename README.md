@@ -21,6 +21,7 @@
 - `-it` флаг для интерактивных процессов, таких как оболочка.
 - `--rm` удалит контейнер после выхода.
 ##### 9. Из оболочки контейнера debian, установить все что нужно для компиляции Си и вставить это в репозиторий git.
+`#check (run -it --rm --name test debian).` - для проверки.
 `apt update -y && apt upgrade -y && apt install -y gcc git`
 ##### 10. Создайте том с именем `hatchery`.
 `docker volume create --name hatchery`
