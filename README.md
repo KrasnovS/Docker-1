@@ -42,7 +42,8 @@
 ##### 18. Перезапустить контейнер `overlord`.
 `docker restart overlor`
 ##### 19. Запустиь контейнер с именем `Abathur`. Это будет контейнер Python, версия 2-slim, его папка /root будет связана с папкой HOME на вашем хосте, а ее порт 3000 будет связан с портом 3000 вашей виртуальной машины. Создать html-страницу которая выведет Hello World с помощью Flask.
-```docker run --name Abathur -dti -v /Users/prawney:/root -p 3000:3000 python:2-slim
+```
+docker run --name Abathur -dti -v /Users/prawney:/root -p 3000:3000 python:2-slim
 docker exec -it Abathur /bin/bash
 pip install flask
 echo "from flask import Flask
