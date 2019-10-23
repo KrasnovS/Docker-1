@@ -1,9 +1,7 @@
 # Docker-1
 
 ##### 1. Создаем виртуальную машину с именем Char
-```bash
-docker-machine create --driver virtualbox Char
-```
+`docker-machine create --driver virtualbox Char`
 ##### 2. Получаем  IP-адрес виртуальной машины Char.
 `docker-machine ip Char`
 ##### 3. Определить переменные, чтобы `docker ps` работал без ошибок.
